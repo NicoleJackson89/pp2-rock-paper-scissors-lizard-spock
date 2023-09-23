@@ -1,0 +1,17 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+
+/* Global style */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Arial;
+    font-family: "Mali", sans-serif;
+    color: #272727;
+    background-color: white;
+}
