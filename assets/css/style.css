@@ -22,12 +22,40 @@ h1 {
     text-align: center;
     letter-spacing: 2px;
     margin: 20px;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     text-transform: capitalize;
 }
 
 h2, .headline {
     text-align: center;
-    margin: 10px;
+    margin: 10px 20px;
 }
 
+/* ---------- Controls Area */
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+.button {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.button > img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Amination to rotate the button on hover 360 degrees */
+.button > img:hover {
+    transform: rotate(360deg);
+    transition: all 0.5s;
+}
