@@ -31,6 +31,27 @@ h2, .headline {
     margin: 10px 20px;
 }
 
+.rules {
+    text-align: center;
+}
+
+.rules > button {
+    font-family: Arial;
+    font-family: "Mali", sans-serif;
+    font-weight: 500;
+    color: #272727;
+    background-color: #f6d5ff;
+    border: #e580ff solid 1px;
+    padding: 2px 3px 2px 3px;
+    border-radius: 5px;
+}
+
+.rules > button:hover {
+    background-color: #e580ff;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
 /* ---------- Controls Area */
 
 .controls {
