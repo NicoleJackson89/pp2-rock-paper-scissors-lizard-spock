@@ -68,6 +68,7 @@ h2, .headline {
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px 20px;
+    padding: 10px 0px 10px 0px;
 }
 
 .choice > div {
@@ -88,6 +89,17 @@ h2, .headline {
 
 #results {
     text-align: center;
-    height: 50px;
+    height: auto;
     margin: 10px 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+/* ---------- Score Area */
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    padding: 10px 0px 10px 0px;
 }
