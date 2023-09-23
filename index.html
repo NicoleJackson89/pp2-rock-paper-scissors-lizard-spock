@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>Document</title>
-</head>
-<body>
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
+  </head>
+
+  <body>
+
+    <h1>
+      Rock, Paper, Scissors, <br />
+      Lizard, Spock
+    </h1>
+
+   
+    <h2>Make your move by clicking one of the buttons below to start the game, best out of 10. 
+        <br> Lets play!! </h2>
+
     
+    <!-- Controls Area -->
+    <div class="controls">
+        <button>Rock</button>
+        <button>Paper</button>
+        <button>Scissors</button>
+        <button>Lizard</button>
+        <button>Spock</button>
+    </div>
+
+    <!-- Choice/Result Area -->
+    <div>
+        <div id="choice">
+            <p>You chose: <span>Option Chosen</span></p>
+            <p>Bot Chose: <span>Option Chosen</span></p>
+        </div>
+        <div id="results">
+            <p>Result</p>
+        </div>
+    </div>
+
+    <!-- Score Area -->
+    <div class="score">
+      <p>Your Score: <span>0</span></p>
+      <p>Bot Score: <span>0</span></p>
+    </div>
+
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
