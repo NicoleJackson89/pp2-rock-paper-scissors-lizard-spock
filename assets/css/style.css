@@ -59,3 +59,35 @@ h2, .headline {
     transform: rotate(360deg);
     transition: all 0.5s;
 }
+
+/* ---------- Choice/Result Area */
+
+.choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+}
+
+.choice > div {
+    margin: 0px 40px 0px 40px;
+}
+
+#user-choice {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#bot-choice {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#results {
+    text-align: center;
+    height: 50px;
+    margin: 10px 20px;
+}

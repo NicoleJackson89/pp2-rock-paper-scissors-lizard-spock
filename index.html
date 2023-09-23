@@ -14,7 +14,7 @@
     <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
 
     <h2>Lets Play!!</h2>
-    
+
     <p class="headline">
       Make your move by clicking one of the buttons below to start the game,
       best out of 10.
@@ -46,14 +46,19 @@
     </div>
 
     <!-- Choice/Result Area -->
-    <div>
-      <div id="choice">
-        <p>You chose: <span>Option Chosen</span></p>
-        <p>Bot Chose: <span>Option Chosen</span></p>
-      </div>
-      <div id="results">
-        <p>Result</p>
-      </div>
+    <div class="choice">
+        <div>
+            <p>You chose: </p>
+            <div id="user-choice">Option Chosen</div>
+        </div>
+        <div>
+            <p>Bot Chose: </p>
+            <div id="bot-choice">Option Chosen</div>
+        </div>
+    </div>
+
+    <div id="results">
+        <p>Results</p>
     </div>
 
     <!-- Score Area -->
