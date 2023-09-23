@@ -63,12 +63,13 @@ h2, .headline {
 /* ---------- Choice/Result Area */
 
 .choice {
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px 20px;
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 .choice > div {
@@ -79,12 +80,26 @@ h2, .headline {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    margin-top: 10px;
+}
+
+#user-choice > img {
+    height: 100%;
+    width: 100%;
+    opacity: 30%;
 }
 
 #bot-choice {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    margin-top: 10px;
+}
+
+#bot-choice > img {
+    height: 100%;
+    width: 100%;
+    opacity: 30%;
 }
 
 #results {
