@@ -33,6 +33,7 @@ h2, .headline {
 
 .rules {
     text-align: center;
+    margin: 10px 20px;
 }
 
 .rules > button {
@@ -139,3 +140,20 @@ h2, .headline {
     margin: 10px 20px;
     padding: 10px 0px 10px 0px;
 }
+
+/* ---------- Screen sizes 780px and smaller */
+
+@media screen and (max-width: 780px){
+
+    h1, h2, .headline, .controls, .choice, #results, .score, .rules {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .button, #bot-choice, #user-choice {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+    }
+}
+
