@@ -34,3 +34,73 @@ function bot() {
     return botChoice;
 }
 
+/**
+ * This fuction compares the bot and user choices to check who won the round
+ */
+function compareChoices () {
+    // Tie game
+    if (userChoice === botChoice) {
+        return `You chose ${userChoice}, the bot chose ${botChoice} - Its a tie!`;
+    }
+    // If the user chose rock
+    else if (userChoice === "rock") {
+        if (botChoice === "scissors") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Rock breaks scissors, you win!`;
+        } else if (botChoice === "paper") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Paper covers rock, you lose!`;
+        } else if (botChoice === "lizard") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Rock crushes lizard, you win!`;
+        } else {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Spock vaporizes rock, you lose!`;
+        }
+    }
+    // If the user chose paper
+    else if (userChoice === "paper") {
+        if (botChoice === "scissors") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Scissors cut paper, you lose!`;
+        } else if (botChoice === "rock") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Paper covers rock, you win!`;
+        } else if (botChoice === "lizard") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Lizard eats paper, you lose!`;
+        } else {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Paper disproves Spock, you win!`;
+        }
+    }
+    // If the user chose scissors
+    else if (userChoice === "scissors") {
+        if (botChoice === "paper") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Scissors cut paper, you win!`;
+        } else if (botChoice === "rock") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Rock breaks scissors, you lose!`;
+        } else if (botChoice === "lizard") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Scissors decapitate lizard, you win!`;
+        } else {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Spock smashes scissors, you lose!`;
+        }
+    }
+    // If the user chose lizard
+    else if (userChoice === "lizard") {
+        if (botChoice === "scissors") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Scissors decapitate lizard, you lose!`;
+        } else if (botChoice === "rock") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Rock crushes lizard, you lose!`;
+        } else if (botChoice === "paper") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Lizard eats paper, you win!`;
+        } else {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Lizard poisons Spock, you win!`;
+        }
+    }
+    // If the user chose spock
+    else if (userChoice === "spock") {
+        if (botChoice === "scissors") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Spock smashes scissors, you win!`;
+        } else if (botChoice === "rock") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Spock vaporizes rock, you win!`;
+        } else if (botChoice === "lizard") {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Lizard poisons Spock, you lose!`;
+        } else {
+            return `You chose ${userChoice}, the bot chose ${botChoice} - Paper disproves Spock, you lose!`;
+        }
+    }
+}
+
