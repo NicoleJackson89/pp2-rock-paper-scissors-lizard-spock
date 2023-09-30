@@ -14,24 +14,44 @@
     <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
 
     <div class="rules">
-        <button type="submit" class="btn">Rules</button>
-        <div class="pop-up">
-            <h2>Rules:</h2>
-            <p>There are ten possible pairings of the five gestures; each gesture beats two of the other gestures
-            and is beaten by the remaining two. <br>
-            One way to remember the rules is to remember the standard "rock-paper-scissors" ordering,
-            where each gesture defeats the one before it, and is defeated by the one after. But then add the
-            two novel gestures near the word they approximately rhyme with: <br>
-            1. Rock <br>
-            2. Spock <br>
-            3. Paper <br>
-            4. Lizard <br>
-            5. Scissors <br>
-            In this expanded list, each gesture is defeated by the following two options, and defeats the
-            preceding two</p>
-            <img src="assets/images/sequence.png" alt="Sequenance or winning options">
-            <button type="button">Close</button>
+      <!-- PopUp Button -->
+      <button id="btn">Rules</button>
+      <!-- The Rules PopUp -->
+      <div class="pop-up" id="pop-up">
+        <div>
+          <h3>Rules:</h3>
+          <p>
+            There are ten possible pairings of the five gestures; each gesture
+            beats two of the other gestures and is beaten by the remaining two.
+          </p>
+          <p>
+            One way to remember the rules is to remember the standard
+            "rock-paper-scissors" ordering, where each gesture defeats the one
+            before it, and is defeated by the one after. But then add the two
+            novel gestures near the word they approximately rhyme with: <br />
+          </p>
+          <p>
+            1. Rock <br />
+            2. Spock <br />
+            3. Paper <br />
+            4. Lizard <br />
+            5. Scissors <br />
+          </p>
+          <p>
+            In this expanded list, each gesture is defeated by the following two
+            options, and defeats the preceding two
+          </p>
+          <img
+            id="sequence-img"
+            src="assets/images/sequence.png"
+            alt="Sequenance or winning options"
+          />
         </div>
+        <!-- <div>
+          <img id="sequence-img" src="assets/images/sequence.png" alt="Sequenance or winning options"/>
+        </div> -->
+        <button type="button" id="close">Close</button>
+      </div>
     </div>
 
     <h2>Lets Play!!</h2>
@@ -43,43 +63,76 @@
 
     <!-- Controls Area -->
     <div class="controls">
-
-      <button class="button" id="rock" data-type="rock" aria-label="Click for the Rock option">
-        <img src="assets/images/rock.png" alt="Rock option"/>
+      <button
+        class="button"
+        id="rock"
+        data-type="rock"
+        aria-label="Click for the Rock option"
+      >
+        <img src="assets/images/rock.png" alt="Rock option" />
       </button>
 
-      <button class="button" id="paper" data-type="paper" aria-label="Click for the Paper option">
-        <img src="assets/images/paper.png" alt="Paper option"/>
+      <button
+        class="button"
+        id="paper"
+        data-type="paper"
+        aria-label="Click for the Paper option"
+      >
+        <img src="assets/images/paper.png" alt="Paper option" />
       </button>
 
-      <button class="button" id="scissors" data-type="scissors" aria-label="Click for the Scissors option">
-        <img src="assets/images/scissors.png" alt="Scissors option"/>
+      <button
+        class="button"
+        id="scissors"
+        data-type="scissors"
+        aria-label="Click for the Scissors option"
+      >
+        <img src="assets/images/scissors.png" alt="Scissors option" />
       </button>
 
-      <button class="button" id="lizard" data-type="lizard" aria-label="Click for the Lizard option">
-        <img src="assets/images/lizard.png" alt="Lizard option"/>
+      <button
+        class="button"
+        id="lizard"
+        data-type="lizard"
+        aria-label="Click for the Lizard option"
+      >
+        <img src="assets/images/lizard.png" alt="Lizard option" />
       </button>
 
-      <button class="button" id="spock" data-type="spock" aria-label="Click for the Spock option">
-        <img src="assets/images/spock.png" alt="Spock option"/>
+      <button
+        class="button"
+        id="spock"
+        data-type="spock"
+        aria-label="Click for the Spock option"
+      >
+        <img src="assets/images/spock.png" alt="Spock option" />
       </button>
-
     </div>
 
     <!-- Choice/Result Area -->
     <div class="choice">
-        <div>
-            <p>You chose: </p>
-            <div id="user-choice"><img src="assets/images/sequence.png" alt="Sequenance or winning options place holder"></div>
+      <div>
+        <p>You chose:</p>
+        <div id="user-choice">
+          <img
+            src="assets/images/sequence.png"
+            alt="Sequenance or winning options place holder"
+          />
         </div>
-        <div>
-            <p>Bot Chose: </p>
-            <div id="bot-choice"><img src="assets/images/sequence.png" alt="Sequenance or winning options place holder"></div>
+      </div>
+      <div>
+        <p>Bot Chose:</p>
+        <div id="bot-choice">
+          <img
+            src="assets/images/sequence.png"
+            alt="Sequenance or winning options place holder"
+          />
         </div>
+      </div>
     </div>
 
     <div>
-        <p id="results"></p>
+      <p id="results"></p>
     </div>
 
     <!-- Score Area -->

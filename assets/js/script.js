@@ -8,15 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
             let player = this.getAttribute("data-type");
             console.log(player);
 
-
-
             let computer = bot(); // the function is called and assiged to the computer variable
             console.log(computer);
 
             let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the fucntion
             document.getElementById("results").innerText = results; // prints the result to the page in the browser
-
+ 
+            
+            
             firstToFive()
+        
         });
     };
 })
@@ -168,3 +169,17 @@ function firstToFive() {
         document.getElementById("user-score").innerText = 0;
     }
 }
+
+let popUp = document.getElementById("pop-up"); //Get the popup box
+let rulesBtn = document.getElementById("btn"); //Get the rules button
+let closePopUp = document.getElementById("close"); //get the close button
+
+rulesBtn.onclick = function() {
+    popUp.style.visibility = "visible";
+}
+
+closePopUp.onclick = function() {
+    popUp.style.visibility = "hidden";
+}
+
+

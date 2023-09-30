@@ -108,7 +108,7 @@ h2, .headline {
 #user-choice > img {
     height: 100%;
     width: 100%;
-    opacity: 30%;
+    /* opacity: 30%; */
 }
 
 #bot-choice {
@@ -121,7 +121,7 @@ h2, .headline {
 #bot-choice > img {
     height: 100%;
     width: 100%;
-    opacity: 30%;
+    /* opacity: 30%; */
 }
 
 #results {
@@ -139,6 +139,54 @@ h2, .headline {
     flex-wrap: wrap;
     margin: 10px 15px;
     padding: 10px 0px 10px 0px;
+}
+
+/* ---------- Rules Button */
+
+#sequence-img {
+    height: 40%;
+    width: 40%;
+    padding: 10px;
+}
+
+.pop-up {
+    width: 600px;
+    border: #272727 2px;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+    visibility: hidden;
+    background-color: white;
+    border: solid #272727 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pop-up > div > p {
+    padding: 5px;
+}
+
+#close {
+    align-items: center;
+    font-family: "Mali", sans-serif;
+    font-weight: 200;
+    color: #272727;
+    background-color: #f6d5ff;
+    border: #e580ff solid 1px;
+    padding: 1px 2px 1px 2px;
+    border-radius: 5px;
+}
+
+#close:hover {
+    background-color: #e580ff;
+    font-weight: bold;
+    transform: scale(1.1);
 }
 
 /* ---------- Screen sizes 780px and smaller */
