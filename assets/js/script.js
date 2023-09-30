@@ -14,10 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the fucntion
             document.getElementById("results").innerText = results; // prints the result to the page in the browser
  
-            
-            
             firstToFive()
-        
         });
     };
 })
@@ -174,12 +171,25 @@ let popUp = document.getElementById("pop-up"); //Get the popup box
 let rulesBtn = document.getElementById("btn"); //Get the rules button
 let closePopUp = document.getElementById("close"); //get the close button
 
-rulesBtn.onclick = function() {
+/**
+ * This function makes the hidden pop up rules visible on click
+ */
+// rulesBtn.onclick = function() {
+//     popUp.style.visibility = "visible"
+// }
+
+rulesBtn.addEventListener("click", function () {
     popUp.style.visibility = "visible";
-}
+});
 
-closePopUp.onclick = function() {
+/**
+ * This function hides the pop up rules on clicking close
+ */
+// closePopUp.onclick = function() {
+//     popUp.style.visibility = "hidden";
+// }
+
+closePopUp.addEventListener("click", function () {
     popUp.style.visibility = "hidden";
-}
-
+});
 
