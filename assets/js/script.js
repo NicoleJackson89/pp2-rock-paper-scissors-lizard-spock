@@ -8,11 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
             let player = this.getAttribute("data-type");
             console.log(player);
 
+
+
             let computer = bot(); // the function is called and assiged to the computer variable
             console.log(computer);
 
             let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the fucntion
             document.getElementById("results").innerText = results; // prints the result to the page in the browser
+
+            firstToFive()
         });
     };
 })
@@ -145,4 +149,22 @@ function userScoreIncrement() {
 function botScoreIncrement() {
     let botScore = parseInt(document.getElementById("bot-score").innerText);
     document.getElementById("bot-score").innerText = ++botScore;
+}
+
+/**
+ * This function checks both bot & user score, once one has reached a score of 5 a winner in announced and the scores reset to 0 
+ */
+function firstToFive() {
+    let botTotal = parseInt(document.getElementById("bot-score").innerText);
+    let userTotal = parseInt(document.getElementById("user-score").innerText);
+
+    if (botTotal === 5) {
+        document.getElementById("results").innerText = "First to score 5 wins, Bot won this round try again!";
+        document.getElementById("bot-score").innerText = 0;
+        document.getElementById("user-score").innerText = 0;
+    } else if (userTotal === 5) {
+        document.getElementById("results").innerText = "First to score 5 wins, You won this round play again!";
+        document.getElementById("bot-score").innerText = 0;
+        document.getElementById("user-score").innerText = 0;
+    }
 }
