@@ -2,42 +2,46 @@
 // Get the HTML button elements and adds event listeners to each of them
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
-
+    console.log(buttons);
     for (let button of buttons) {
         button.addEventListener("click", function user() {
-            let userChoice = this.getAttribute("data-type");
-            // alert(`You chose ${userChoice}`);
-            bot();
-            console.log(userChoice);
-            console.log(bot());
+            let player = this.getAttribute("data-type");
+            console.log(player);
+
+            let computer = bot(); // the function is called and assiged to the computer variable
+            console.log(computer);
+
+            let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the fucntion
+            console.log(results);
         });
     };
 })
 
 /**
- * Bot function creates a random number from 1 to 4 which gets assigned to botChoice
+ * Bot function creates a random number from 1 to 4 which gets stored in the randomBotChoice variable
  */
 function bot() {
-    let botChoice = Math.floor(Math.random() * 4) + 1;
-
-    if (botChoice === 1) {
-        botChoice = "rock";
-    } else if (botChoice === 2) {
-        botChoice = "paper";
-    } else if (botChoice === 3) {
-        botChoice = "scissors";
-    } else if (botChoice === 4) {
-        botChoice = "lizard";
+    // console.log("The bot made a choice"); // check if it was triggered or not in the console
+    let randomBotChoice = Math.floor(Math.random() * 4) + 1;
+    // console.log(randomBotChoice); // prints the number of the choice bot made
+    if (randomBotChoice === 1) {
+        randomBotChoice = "rock";
+    } else if (randomBotChoice === 2) {
+        randomBotChoice = "paper";
+    } else if (randomBotChoice === 3) {
+        randomBotChoice = "scissors";
+    } else if (randomBotChoice === 4) {
+        randomBotChoice = "lizard";
     } else {
-        botChoice = "spock";
+        randomBotChoice = "spock";
     }
-    return botChoice;
+    return randomBotChoice;
 }
 
 /**
- * This fuction compares the bot and user choices to check who won the round
+ * This fuction compares the bot and user choices to tell the user who won the round
  */
-function compareChoices () {
+function compareChoices (userChoice, botChoice) { //local variable passed as parameter, can have any names (in the function definition)
     // Tie game
     if (userChoice === botChoice) {
         return `You chose ${userChoice}, the bot chose ${botChoice} - Its a tie!`;
