@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(computer);
 
             let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the fucntion
-            console.log(results);
+            document.getElementById("results").innerText = results; // prints the result to the page in the browser
         });
     };
 })
@@ -39,7 +39,10 @@ function bot() {
 }
 
 /**
- * This fuction compares the bot and user choices to tell the user who won the round
+ * This fuction compares the bot and user choices to let the user know who won the round
+ * @param {the local variable which displays the choice made by the user} userChoice 
+ * @param {the local variable which displays the choice made by the bot} botChoice 
+ * @returns The string which is relevant to the choises bot/user made and displays this
  */
 function compareChoices (userChoice, botChoice) { //local variable passed as parameter, can have any names (in the function definition)
     // Tie game

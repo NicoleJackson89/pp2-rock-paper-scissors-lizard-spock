@@ -126,13 +126,13 @@ h2, .headline {
 
 #results {
     text-align: center;
-    height: auto;
+    height: 50px;
     margin: 10px 15px;
     padding: 10px 0px 10px 0px;
 }
 
 /* ---------- Score Area */
-.score {
+#score {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -145,7 +145,7 @@ h2, .headline {
 
 @media screen and (max-width: 780px){
 
-    h1, h2, .headline, .controls, .choice, #results, .score, .rules {
+    h1, h2, .headline, .controls, .choice, #results, #score, .rules {
         margin: 5px;
         padding: 5px;
     }
@@ -161,9 +161,13 @@ h2, .headline {
 
 @media screen and (max-width: 390px) {
 
-    h1, h2, .headline, .controls, .choice, #results, .score, .rules {
+    h1, h2, .headline, .controls, .choice, #results, #score, .rules {
         margin: 5px;
         padding: 5px;
+    }
+
+    #results {
+        height: auto;
     }
 
     .button, #bot-choice, #user-choice {
