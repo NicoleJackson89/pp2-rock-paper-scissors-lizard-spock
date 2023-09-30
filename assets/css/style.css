@@ -183,7 +183,7 @@ h2, .headline {
     border-radius: 5px;
 }
 
-#close:hover {
+#close > button:hover {
     background-color: #e580ff;
     font-weight: bold;
     transform: scale(1.1);
@@ -202,6 +202,14 @@ h2, .headline {
         height: 100px;
         width: 100px;
         margin: 10px;
+    }
+
+    .pop-up {
+        width: auto;
+        left: 30%;
+        top: 25%;
+        transform: translate(-20%, -20%);
+        font-size: smaller;
     }
 }
 
