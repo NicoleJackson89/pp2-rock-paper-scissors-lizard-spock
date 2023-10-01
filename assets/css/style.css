@@ -34,20 +34,22 @@ h2, .headline {
 .rules {
     text-align: center;
     margin: 10px 15px;
+    display: flex;
+    justify-content: center;
 }
 
-.rules > button {
-    font-family: Arial;
+#btn {
+    width: 45px;
     font-family: "Mali", sans-serif;
-    font-weight: 500;
+    font-weight: 200;
     color: #272727;
     background-color: #f6d5ff;
     border: #e580ff solid 1px;
-    padding: 2px 3px 2px 3px;
+    padding: 1px 2px 1px 2px;
     border-radius: 5px;
 }
 
-.rules > button:hover {
+#btn:hover {
     background-color: #e580ff;
     font-weight: bold;
     transform: scale(1.1);
@@ -173,7 +175,7 @@ h2, .headline {
 }
 
 #close {
-    align-items: center;
+    /* align-items: center; */
     font-family: "Mali", sans-serif;
     font-weight: 200;
     color: #272727;
@@ -183,7 +185,7 @@ h2, .headline {
     border-radius: 5px;
 }
 
-#close > button:hover {
+#close:hover {
     background-color: #e580ff;
     font-weight: bold;
     transform: scale(1.1);

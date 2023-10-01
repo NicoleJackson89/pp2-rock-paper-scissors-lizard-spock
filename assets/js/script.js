@@ -11,10 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
             let computer = bot(); // the function is called and assiged to the computer variable
             console.log(computer);
 
-            let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the fucntion
+            let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the function
             document.getElementById("results").innerText = results; // prints the result to the page in the browser
  
             firstToFive()
+            botImgChange(computer);
+            userImgChange(player)
         });
     };
 })
@@ -160,10 +162,14 @@ function firstToFive() {
         document.getElementById("results").innerText = "First to score 5 wins, Bot won this round try again!";
         document.getElementById("bot-score").innerText = 0;
         document.getElementById("user-score").innerText = 0;
+        // document.getElementById("bot-choice").innerHTML = `<img src="assets/images/sequence.png"/>`;
+        // document.getElementById("user-choice").innerHTML = `<img src="assets/images/sequence.png"/>`;
     } else if (userTotal === 5) {
         document.getElementById("results").innerText = "First to score 5 wins, You won this round play again!";
         document.getElementById("bot-score").innerText = 0;
         document.getElementById("user-score").innerText = 0;
+        // document.getElementById("bot-choice").innerHTML = `<img src="assets/images/sequence.png"/>`;
+        // document.getElementById("user-choice").innerHTML = `<img src="assets/images/sequence.png"/>`;
     }
 }
 
@@ -193,3 +199,35 @@ closePopUp.addEventListener("click", function () {
     popUp.style.visibility = "hidden";
 });
 
+function userImgChange(player) {
+    let userImg = document.getElementById("user-choice");
+
+    if (player === "rock") {
+        return userImg.innerHTML = `<img src="assets/images/rock.png"/>`;
+    } else if (player === "paper") {
+        return userImg.innerHTML = `<img src="assets/images/paper.png"/>`;
+    } else if (player === "scissors") {
+        return userImg.innerHTML = `<img src="assets/images/scissors.png"/>`;
+    } else if (player === "lizard") {
+        return userImg.innerHTML = `<img src="assets/images/lizard.png"/>`;
+    } else if (player === "spock") {
+        return userImg.innerHTML = `<img src="assets/images/spock.png"/>`;
+    }
+
+}
+
+function botImgChange(computer) {
+    let botImg = document.getElementById("bot-choice");
+
+    if (computer === "rock") {
+        return botImg.innerHTML = `<img src="assets/images/rock.png"/>`;
+    } else if (computer === "paper") {
+        return botImg.innerHTML = `<img src="assets/images/paper.png"/>`;
+    } else if (computer === "scissors") {
+        return botImg.innerHTML = `<img src="assets/images/scissors.png"/>`;
+    } else if (computer === "lizard") {
+        return botImg.innerHTML = `<img src="assets/images/lizard.png"/>`;
+    } else if (computer === "spock") {
+        return botImg.innerHTML = `<img src="assets/images/spock.png"/>`;
+    }
+}
