@@ -110,7 +110,6 @@ h2, .headline {
 #user-choice > img {
     height: 100%;
     width: 100%;
-    /* opacity: 30%; */
 }
 
 #bot-choice {
@@ -123,12 +122,11 @@ h2, .headline {
 #bot-choice > img {
     height: 100%;
     width: 100%;
-    /* opacity: 30%; */
 }
 
 #results {
     text-align: center;
-    height: 50px;
+    height: 35px;
     margin: 10px 15px;
     padding: 10px 0px 10px 0px;
 }
@@ -143,12 +141,11 @@ h2, .headline {
     padding: 10px 0px 10px 0px;
 }
 
-/* ---------- Rules Button */
+/* ---------- Rules Popup */
 
 #sequence-img {
     height: 40%;
     width: 40%;
-    padding: 10px;
 }
 
 .pop-up {
@@ -170,12 +167,24 @@ h2, .headline {
     align-items: center;
 }
 
+#flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+}
+
 .pop-up > div > p {
     padding: 5px;
 }
 
+#flex > ul {
+    list-style-type: none;
+}
+
 #close {
-    /* align-items: center; */
     font-family: "Mali", sans-serif;
     font-weight: 200;
     color: #272727;
@@ -212,6 +221,14 @@ h2, .headline {
         top: 25%;
         transform: translate(-20%, -20%);
         font-size: smaller;
+    }
+
+    #flex {
+        flex-direction: column;
+    }
+
+    #sequence-img {
+        padding: 10px;
     }
 }
 

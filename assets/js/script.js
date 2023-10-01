@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
             let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the function
             document.getElementById("results").innerText = results; // prints the result to the page in the browser
  
-            firstToFive()
+            firstToFive();
             botImgChange(computer);
-            userImgChange(player)
+            userImgChange(player);
         });
     };
 })
@@ -152,7 +152,7 @@ function botScoreIncrement() {
 }
 
 /**
- * This function checks both bot & user score, once one has reached a score of 5 a winner in announced and the scores reset to 0 
+ * This function checks both bot & user score, once either have reached a score of 5 a winner in announced and the scores reset to 0 
  */
 function firstToFive() {
     let botTotal = parseInt(document.getElementById("bot-score").innerText);
@@ -162,14 +162,10 @@ function firstToFive() {
         document.getElementById("results").innerText = "First to score 5 wins, Bot won this round try again!";
         document.getElementById("bot-score").innerText = 0;
         document.getElementById("user-score").innerText = 0;
-        // document.getElementById("bot-choice").innerHTML = `<img src="assets/images/sequence.png"/>`;
-        // document.getElementById("user-choice").innerHTML = `<img src="assets/images/sequence.png"/>`;
     } else if (userTotal === 5) {
         document.getElementById("results").innerText = "First to score 5 wins, You won this round play again!";
         document.getElementById("bot-score").innerText = 0;
         document.getElementById("user-score").innerText = 0;
-        // document.getElementById("bot-choice").innerHTML = `<img src="assets/images/sequence.png"/>`;
-        // document.getElementById("user-choice").innerHTML = `<img src="assets/images/sequence.png"/>`;
     }
 }
 
@@ -199,6 +195,9 @@ closePopUp.addEventListener("click", function () {
     popUp.style.visibility = "hidden";
 });
 
+/**
+ * This function changes the choice image with the one chosen by the user
+ */
 function userImgChange(player) {
     let userImg = document.getElementById("user-choice");
 
@@ -215,7 +214,9 @@ function userImgChange(player) {
     }
 
 }
-
+/**
+ * This function changes the choice image with the one chosen by the bot 
+ */
 function botImgChange(computer) {
     let botImg = document.getElementById("bot-choice");
 
