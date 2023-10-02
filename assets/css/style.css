@@ -264,3 +264,27 @@ h2, .headline {
         font-size: smaller;
     }
 }
+
+/* ---------- Screen sizes 320px and smaller */
+
+@media screen and (max-width: 320px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .button,
+    #bot-choice,
+    #user-choice {
+        height: 50px;
+        width: 50px;
+    }
+
+    .choice>div {
+        margin: 0px 5px 0px 5px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+}

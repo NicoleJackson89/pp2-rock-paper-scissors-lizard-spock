@@ -2,6 +2,12 @@
 
 ### [View the live page here](https://nicolejackson89.github.io/pp2-rock-paper-scissors-lizard-spock/)
 
+This web based strategy game, Rock Paper Scissors Lizard Spock, was made to target anyone who has minimal time available but enjoys a quick strategy game that can be played on any device against the computer/bot.
+
+"Rock Paper Scissors Spock Lizard" was invented by Sam Kass and Karen Bryla, as "Rock Paper Scissors Spock Lizard". The expansion version works on the same principle as the original "Rock Paper Scissor" most of us played as kids but with the two additional weapons.
+
+![Responsive]()
+
 ## User Experience
 
 ### Wireframe
