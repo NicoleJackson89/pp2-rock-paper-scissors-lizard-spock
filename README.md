@@ -41,6 +41,13 @@ This web based strategy game, Rock Paper Scissors Lizard Spock, was made to targ
 
 ![CSS Validator](./assets/docs/css-validator.png)
 
+### JavaScript Validator
+
+- No errors were found when validating my JavaScript code through [JSHint](https://jshint.com/).
+- 59 Warnings were found.
+
+![JSHint](./assets/docs/javascript-validator-before.png)
+
 ### Lighthouse
 
 ### Manual Testing
