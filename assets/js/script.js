@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
     console.log(buttons);
     for (let button of buttons) {
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
             let player = this.getAttribute("data-type");
             console.log(player);
 
@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the function
             document.getElementById("results").innerText = results; // prints the result to the page in the browser
- 
+
             firstToFive();
             botImgChange(computer);
             userImgChange(player);
         });
     };
-})
+});
 
 /**
  * Bot function creates a random number from 1 to 4 which gets stored in the randomBotChoice variable
@@ -48,7 +48,7 @@ function bot() {
  * @param {the local variable which displays the choice made by the bot} botChoice 
  * @returns The string which is relevant to the choises bot/user made and displays this
  */
-function compareChoices (userChoice, botChoice) { //local variable passed as parameter, can have any names (in the function definition)
+function compareChoices(userChoice, botChoice) { //local variable passed as parameter, can have any names (in the function definition)
     // Tie game
     if (userChoice === botChoice) {
         return `You chose ${userChoice}, the bot chose ${botChoice} - Its a tie!`;
@@ -59,26 +59,26 @@ function compareChoices (userChoice, botChoice) { //local variable passed as par
             userScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Rock breaks scissors, you win!`;
         } else if (botChoice === "paper") {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Paper covers rock, you lose!`;
         } else if (botChoice === "lizard") {
             userScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Rock crushes lizard, you win!`;
         } else {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Spock vaporizes rock, you lose!`;
         }
     }
     // If the user chose paper
     else if (userChoice === "paper") {
         if (botChoice === "scissors") {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Scissors cut paper, you lose!`;
         } else if (botChoice === "rock") {
             userScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Paper covers rock, you win!`;
         } else if (botChoice === "lizard") {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Lizard eats paper, you lose!`;
         } else {
             userScoreIncrement();
@@ -91,23 +91,23 @@ function compareChoices (userChoice, botChoice) { //local variable passed as par
             userScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Scissors cut paper, you win!`;
         } else if (botChoice === "rock") {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Rock breaks scissors, you lose!`;
         } else if (botChoice === "lizard") {
             userScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Scissors decapitate lizard, you win!`;
         } else {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Spock smashes scissors, you lose!`;
         }
     }
     // If the user chose lizard
     else if (userChoice === "lizard") {
         if (botChoice === "scissors") {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Scissors decapitate lizard, you lose!`;
         } else if (botChoice === "rock") {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Rock crushes lizard, you lose!`;
         } else if (botChoice === "paper") {
             userScoreIncrement();
@@ -126,10 +126,10 @@ function compareChoices (userChoice, botChoice) { //local variable passed as par
             userScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Spock vaporizes rock, you win!`;
         } else if (botChoice === "lizard") {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Lizard poisons Spock, you lose!`;
         } else {
-            botScoreIncrement()
+            botScoreIncrement();
             return `You chose ${userChoice}, the bot chose ${botChoice} - Paper disproves Spock, you lose!`;
         }
     }
