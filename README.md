@@ -50,6 +50,20 @@ This web based strategy game, Rock Paper Scissors Lizard Spock, was made to targ
 
 ### Lighthouse
 
+I used the Lighthouse Google Chrome dev tools feature to test the website in mobile and desktop view.
+
+- Desktop
+
+  - The performance score was good on desktop testing.
+
+![Lighthouse Desktop](./assets/docs/lighthouse-desktop.png)
+
+- Mobile
+
+  - A lower performance score was received on the mobile testing.
+
+![Lighthouse Mobile](./assets/docs/lighthouse-mobile.png)
+
 ### Manual Testing
 
 ### Known bugs and fixes
