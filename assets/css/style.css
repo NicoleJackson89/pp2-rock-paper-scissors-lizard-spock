@@ -26,7 +26,8 @@ h1 {
     text-transform: capitalize;
 }
 
-h2, .headline {
+h2,
+.headline {
     text-align: center;
     margin: 10px 15px;
 }
@@ -73,13 +74,13 @@ h2, .headline {
     margin: 15px;
 }
 
-.button > img {
+.button>img {
     height: 100%;
     width: 100%;
 }
 
 /* Amination to rotate the button on hover 360 degrees */
-.button > img:hover {
+.button>img:hover {
     transform: rotate(360deg);
     transition: all 0.5s;
 }
@@ -96,7 +97,7 @@ h2, .headline {
     padding: 0px 0px 10px 0px;
 }
 
-.choice > div {
+.choice>div {
     margin: 0px 30px 0px 30px;
 }
 
@@ -107,7 +108,7 @@ h2, .headline {
     margin-top: 10px;
 }
 
-#user-choice > img {
+#user-choice>img {
     height: 100%;
     width: 100%;
 }
@@ -119,7 +120,7 @@ h2, .headline {
     margin-top: 10px;
 }
 
-#bot-choice > img {
+#bot-choice>img {
     height: 100%;
     width: 100%;
 }
@@ -176,11 +177,11 @@ h2, .headline {
     padding: 10px;
 }
 
-.pop-up > div > p {
+.pop-up>div>p {
     padding: 5px;
 }
 
-#flex > ul {
+#flex>ul {
     list-style-type: none;
 }
 
@@ -202,14 +203,23 @@ h2, .headline {
 
 /* ---------- Screen sizes 780px and smaller */
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px) {
 
-    h1, h2, .headline, .controls, .choice, #results, #score, .rules {
+    h1,
+    h2,
+    .headline,
+    .controls,
+    .choice,
+    #results,
+    #score,
+    .rules {
         margin: 5px;
         padding: 5px;
     }
 
-    .button, #bot-choice, #user-choice {
+    .button,
+    #bot-choice,
+    #user-choice {
         height: 100px;
         width: 100px;
         margin: 10px;
@@ -236,7 +246,14 @@ h2, .headline {
 
 @media screen and (max-width: 390px) {
 
-    h1, h2, .headline, .controls, .choice, #results, #score, .rules {
+    h1,
+    h2,
+    .headline,
+    .controls,
+    .choice,
+    #results,
+    #score,
+    .rules {
         margin: 5px;
         padding: 5px;
     }
@@ -245,7 +262,9 @@ h2, .headline {
         height: auto;
     }
 
-    .button, #bot-choice, #user-choice {
+    .button,
+    #bot-choice,
+    #user-choice {
         display: flex;
         height: 80px;
         width: 80px;
@@ -256,7 +275,7 @@ h2, .headline {
         justify-content: space-around;
     }
 
-    .choice > div {
+    .choice>div {
         margin: 0px 10px 0px 10px;
     }
 
