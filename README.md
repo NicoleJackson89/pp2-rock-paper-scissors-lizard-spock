@@ -6,7 +6,7 @@ This web based strategy game, Rock Paper Scissors Lizard Spock, was made to targ
 
 "Rock Paper Scissors Spock Lizard" was invented by Sam Kass and Karen Bryla, as "Rock Paper Scissors Spock Lizard". The expansion version works on the same principle as the original "Rock Paper Scissor" most of us played as kids but with the two additional weapons.
 
-![Responsive]()
+![Responsive](./assets/docs/am-i-responsive.png)
 
 ## User Experience
 
