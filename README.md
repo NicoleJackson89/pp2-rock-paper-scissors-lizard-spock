@@ -26,6 +26,8 @@ This web based strategy game, Rock Paper Scissors Lizard Spock, was made to targ
 
 ## Testing
 
+- The HTML, CSS & JavaScript code was tested through the building process of the browser based game using the W3C validator to fix any errors or warnings as well as . This was to ensure a smoother final testing period at the end of the building process.
+
 ### HTML Validator
 
 ### CSS Validator
