@@ -202,15 +202,20 @@ function userImgChange(player) {
     let userImg = document.getElementById("user-choice");
 
     if (player === "rock") {
-        return userImg.innerHTML = `<img src="assets/images/rock.png"/>`;
+        userImg.innerHTML = `<img src="assets/images/rock.png"/>`;
+        return;
     } else if (player === "paper") {
-        return userImg.innerHTML = `<img src="assets/images/paper.png"/>`;
+        userImg.innerHTML = `<img src="assets/images/paper.png"/>`;
+        return;
     } else if (player === "scissors") {
-        return userImg.innerHTML = `<img src="assets/images/scissors.png"/>`;
+        userImg.innerHTML = `<img src="assets/images/scissors.png"/>`;
+        return;
     } else if (player === "lizard") {
-        return userImg.innerHTML = `<img src="assets/images/lizard.png"/>`;
-    } else if (player === "spock") {
-        return userImg.innerHTML = `<img src="assets/images/spock.png"/>`;
+        userImg.innerHTML = `<img src="assets/images/lizard.png"/>`;
+        return;
+    } else {
+        userImg.innerHTML = `<img src="assets/images/spock.png"/>`;
+        return;
     }
 
 }
@@ -221,14 +226,19 @@ function botImgChange(computer) {
     let botImg = document.getElementById("bot-choice");
 
     if (computer === "rock") {
-        return botImg.innerHTML = `<img src="assets/images/rock.png"/>`;
+        botImg.innerHTML = `<img src="assets/images/rock.png"/>`;
+        return;
     } else if (computer === "paper") {
-        return botImg.innerHTML = `<img src="assets/images/paper.png"/>`;
+        botImg.innerHTML = `<img src="assets/images/paper.png"/>`;
+        return;
     } else if (computer === "scissors") {
-        return botImg.innerHTML = `<img src="assets/images/scissors.png"/>`;
+        botImg.innerHTML = `<img src="assets/images/scissors.png"/>`;
+        return;
     } else if (computer === "lizard") {
-        return botImg.innerHTML = `<img src="assets/images/lizard.png"/>`;
-    } else if (computer === "spock") {
-        return botImg.innerHTML = `<img src="assets/images/spock.png"/>`;
+        botImg.innerHTML = `<img src="assets/images/lizard.png"/>`;
+        return;
+    } else {
+        botImg.innerHTML = `<img src="assets/images/spock.png"/>`;
+        return;
     }
 }
