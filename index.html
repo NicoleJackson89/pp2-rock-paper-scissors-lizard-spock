@@ -1,98 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Online browser based strategy expansion game of the origional Rock, Paper, Scissors adding the Lizard, Spock extra options. Based and created in the United Kingdom.">
-    <meta name="keywords"
-        content="RPSLS, online game, strategy, rock paper scissors, rock paper scissors lizard spock, hand signal game">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Online browser based strategy expansion game of the origional Rock, Paper, Scissors adding the Lizard, Spock extra options. Based and created in the United Kingdom."
+    />
+    <meta
+      name="keywords"
+      content="RPSLS, online game, strategy, rock paper scissors, rock paper scissors lizard spock, hand signal game"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Headings -->
     <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
     <div class="rules">
-        <!-- PopUp Button -->
-        <div id="btn">Rules</div>
+      <!-- PopUp Button -->
+      <div id="btn">Rules</div>
+      <!-- Overlay: https://www.w3schools.com/howto/howto_css_overlay.asp -->
+      <div id="overlay">
         <!-- The Rules PopUp -->
         <div class="pop-up" id="pop-up">
-            <div>
-                <h3>Rules:</h3>
-                <p>
-                    There are ten possible pairings of the five gestures; each gesture
-                    beats two of the other gestures and is beaten by the remaining two:
-                </p>
-                <div id="flex">
-                    <ul>
-                        <li>Scissors cuts paper.</li>
-                        <li>Paper covers rock.</li>
-                        <li>Rock crushes lizard.</li>
-                        <li>Lizard poisons Spock.</li>
-                        <li>Spock smashes scissors.</li>
-                        <li>Scissors decapitates lizard.</li>
-                        <li>Lizard eats paper.</li>
-                        <li>Paper disproves Spock.</li>
-                        <li>Spock vaporizes rock.</li>
-                        <li>Rock crushes scissors.</li>
-                    </ul>
-                    <img id="sequence-img" src="assets/images/sequence.png" alt="Sequenance or winning options">
-                </div>
+          <div>
+            <h3>Rules:</h3>
+            <p>
+              There are ten possible pairings of the five gestures; each gesture
+              beats two of the other gestures and is beaten by the remaining
+              two:
+            </p>
+            <div id="flex">
+              <ul>
+                <li>Scissors cuts paper.</li>
+                <li>Paper covers rock.</li>
+                <li>Rock crushes lizard.</li>
+                <li>Lizard poisons Spock.</li>
+                <li>Spock smashes scissors.</li>
+                <li>Scissors decapitates lizard.</li>
+                <li>Lizard eats paper.</li>
+                <li>Paper disproves Spock.</li>
+                <li>Spock vaporizes rock.</li>
+                <li>Rock crushes scissors.</li>
+              </ul>
+              <img
+                id="sequence-img"
+                src="assets/images/sequence.png"
+                alt="Sequenance or winning options"
+              />
             </div>
-            <div id="close">Close</div>
+          </div>
+          <div id="close">Close</div>
         </div>
+      </div>
     </div>
     <h2>Lets Play!!</h2>
     <p class="headline">
-        Make your move by clicking one of the buttons below to start the game,
-        first to score 5 wins the round!
+      Make your move by clicking one of the buttons below to start the game,
+      first to score 5 wins the round!
     </p>
     <!-- Controls Area -->
     <div class="controls">
-        <button class="button" id="rock" data-type="rock" aria-label="Click for the Rock option">
-            <img src="assets/images/rock.png" alt="Rock option">
-        </button>
-        <button class="button" id="paper" data-type="paper" aria-label="Click for the Paper option">
-            <img src="assets/images/paper.png" alt="Paper option">
-        </button>
-        <button class="button" id="scissors" data-type="scissors" aria-label="Click for the Scissors option">
-            <img src="assets/images/scissors.png" alt="Scissors option">
-        </button>
-        <button class="button" id="lizard" data-type="lizard" aria-label="Click for the Lizard option">
-            <img src="assets/images/lizard.png" alt="Lizard option">
-        </button>
-        <button class="button" id="spock" data-type="spock" aria-label="Click for the Spock option">
-            <img src="assets/images/spock.png" alt="Spock option">
-        </button>
+      <button
+        class="button"
+        id="rock"
+        data-type="rock"
+        aria-label="Click for the Rock option"
+      >
+        <img src="assets/images/rock.png" alt="Rock option" />
+      </button>
+      <button
+        class="button"
+        id="paper"
+        data-type="paper"
+        aria-label="Click for the Paper option"
+      >
+        <img src="assets/images/paper.png" alt="Paper option" />
+      </button>
+      <button
+        class="button"
+        id="scissors"
+        data-type="scissors"
+        aria-label="Click for the Scissors option"
+      >
+        <img src="assets/images/scissors.png" alt="Scissors option" />
+      </button>
+      <button
+        class="button"
+        id="lizard"
+        data-type="lizard"
+        aria-label="Click for the Lizard option"
+      >
+        <img src="assets/images/lizard.png" alt="Lizard option" />
+      </button>
+      <button
+        class="button"
+        id="spock"
+        data-type="spock"
+        aria-label="Click for the Spock option"
+      >
+        <img src="assets/images/spock.png" alt="Spock option" />
+      </button>
     </div>
     <!-- Choice/Result Area -->
     <div class="choice">
-        <div>
-            <p>You chose:</p>
-            <div id="user-choice">
-                <img src="assets/images/sequence.png" alt="Sequenance or winning options place holder">
-            </div>
+      <div>
+        <p>You chose:</p>
+        <div id="user-choice">
+          <img
+            src="assets/images/sequence.png"
+            alt="Sequenance or winning options place holder"
+          />
         </div>
-        <div>
-            <p>Bot Chose:</p>
-            <div id="bot-choice">
-                <img src="assets/images/sequence.png" alt="Sequenance or winning options place holder">
-            </div>
+      </div>
+      <div>
+        <p>Bot Chose:</p>
+        <div id="bot-choice">
+          <img
+            src="assets/images/sequence.png"
+            alt="Sequenance or winning options place holder"
+          />
         </div>
+      </div>
     </div>
     <div>
-        <p id="results"></p>
+      <p id="results"></p>
     </div>
     <!-- Score Area -->
     <div id="score">
-        <p class="scores">Your Score: <span id="user-score">0</span></p>
-        <p class="scores">Bot Score: <span id="bot-score">0</span></p>
+      <p class="scores">Your Score: <span id="user-score">0</span></p>
+      <p class="scores">Bot Score: <span id="bot-score">0</span></p>
     </div>
     <script src="assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>

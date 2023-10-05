@@ -169,7 +169,7 @@ function firstToFive() {
     }
 }
 
-let popUp = document.getElementById("pop-up"); //Get the popup box
+let popUp = document.getElementById("overlay"); //Get the popup box
 let rulesBtn = document.getElementById("btn"); //Get the rules button
 let closePopUp = document.getElementById("close"); //get the close button
 
@@ -181,7 +181,7 @@ let closePopUp = document.getElementById("close"); //get the close button
 // }
 
 rulesBtn.addEventListener("click", function () {
-    popUp.style.visibility = "visible";
+    popUp.style.display = "block";
 });
 
 /**
@@ -192,7 +192,7 @@ rulesBtn.addEventListener("click", function () {
 // }
 
 closePopUp.addEventListener("click", function () {
-    popUp.style.visibility = "hidden";
+    popUp.style.display = "none";
 });
 
 /**
