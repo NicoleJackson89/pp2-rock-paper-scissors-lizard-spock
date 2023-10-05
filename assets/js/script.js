@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
             let player = this.getAttribute("data-type");
             console.log(player);
 
-            let computer = bot(); // the function is called and assiged to the computer variable
+            let computer = bot();
             console.log(computer);
 
-            let results = compareChoices(player, computer); // the function is called and assiged to the results variable, i passed two parameters in the function
-            document.getElementById("results").innerText = results; // prints the result to the page in the browser
+            let results = compareChoices(player, computer);
+            document.getElementById("results").innerText = results;
 
             firstToFive();
             botImgChange(computer);
@@ -25,9 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
  * Bot function creates a random number from 1 to 4 which gets stored in the randomBotChoice variable
  */
 function bot() {
-    // console.log("The bot made a choice"); // check if it was triggered or not in the console
     let randomBotChoice = Math.floor(Math.random() * 4) + 1;
-    // console.log(randomBotChoice); // prints the number of the choice bot made
+
     if (randomBotChoice === 1) {
         randomBotChoice = "rock";
     } else if (randomBotChoice === 2) {
@@ -48,12 +47,12 @@ function bot() {
  * @param {the local variable which displays the choice made by the bot} botChoice 
  * @returns The string which is relevant to the choises bot/user made and displays this
  */
-function compareChoices(userChoice, botChoice) { //local variable passed as parameter, can have any names (in the function definition)
-    // Tie game
+function compareChoices(userChoice, botChoice) {
+
     if (userChoice === botChoice) {
         return `You chose ${userChoice}, the bot chose ${botChoice} - Its a tie!`;
     }
-    // If the user chose rock
+
     else if (userChoice === "rock") {
         if (botChoice === "scissors") {
             userScoreIncrement();
@@ -69,7 +68,7 @@ function compareChoices(userChoice, botChoice) { //local variable passed as para
             return `You chose ${userChoice}, the bot chose ${botChoice} - Spock vaporizes rock, you lose!`;
         }
     }
-    // If the user chose paper
+
     else if (userChoice === "paper") {
         if (botChoice === "scissors") {
             botScoreIncrement();
@@ -85,7 +84,7 @@ function compareChoices(userChoice, botChoice) { //local variable passed as para
             return `You chose ${userChoice}, the bot chose ${botChoice} - Paper disproves Spock, you win!`;
         }
     }
-    // If the user chose scissors
+
     else if (userChoice === "scissors") {
         if (botChoice === "paper") {
             userScoreIncrement();
@@ -101,7 +100,7 @@ function compareChoices(userChoice, botChoice) { //local variable passed as para
             return `You chose ${userChoice}, the bot chose ${botChoice} - Spock smashes scissors, you lose!`;
         }
     }
-    // If the user chose lizard
+
     else if (userChoice === "lizard") {
         if (botChoice === "scissors") {
             botScoreIncrement();
@@ -117,7 +116,7 @@ function compareChoices(userChoice, botChoice) { //local variable passed as para
             return `You chose ${userChoice}, the bot chose ${botChoice} - Lizard poisons Spock, you win!`;
         }
     }
-    // If the user chose spock
+
     else if (userChoice === "spock") {
         if (botChoice === "scissors") {
             userScoreIncrement();
@@ -169,17 +168,13 @@ function firstToFive() {
     }
 }
 
-let popUp = document.getElementById("overlay"); //Get the popup box
-let rulesBtn = document.getElementById("btn"); //Get the rules button
-let closePopUp = document.getElementById("close"); //get the close button
+let popUp = document.getElementById("overlay");
+let rulesBtn = document.getElementById("btn");
+let closePopUp = document.getElementById("close");
 
 /**
  * This function makes the hidden pop up rules visible on click
  */
-// rulesBtn.onclick = function() {
-//     popUp.style.visibility = "visible"
-// }
-
 rulesBtn.addEventListener("click", function () {
     popUp.style.display = "block";
 });
@@ -187,10 +182,6 @@ rulesBtn.addEventListener("click", function () {
 /**
  * This function hides the pop up rules on clicking close
  */
-// closePopUp.onclick = function() {
-//     popUp.style.visibility = "hidden";
-// }
-
 closePopUp.addEventListener("click", function () {
     popUp.style.display = "none";
 });
@@ -219,6 +210,7 @@ function userImgChange(player) {
     }
 
 }
+
 /**
  * This function changes the choice image with the one chosen by the bot 
  */

@@ -81,7 +81,7 @@ h2,
     width: 100%;
 }
 
-/* Amination to rotate the button on hover 360 degrees: https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover */
+/* Amination to rotate the button on hover 360 degrees: https://shorturl.at/frGXZ */
 .button>img:hover {
     transform: rotate(360deg);
     transition: all 0.5s;
@@ -144,7 +144,7 @@ h2,
     padding: 10px 0px 10px 0px;
 }
 
-/* ---------- Overlay: https://www.w3schools.com/howto/howto_css_overlay.asp */
+/* ---------- Overlay: https://shorturl.at/zLMR4 */
 
 #overlay {
     position: fixed;
@@ -178,7 +178,6 @@ h2,
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
-    /* -ms-transform: translate(-50%, -50%); */
 
     padding: 10px;
   
