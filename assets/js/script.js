@@ -6,10 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             let player = this.getAttribute("data-type");
-            console.log(player);
 
             let computer = bot();
-            console.log(computer);
 
             let results = compareChoices(player, computer);
             document.getElementById("results").innerText = results;
@@ -193,19 +191,19 @@ function userImgChange(player) {
     let userImg = document.getElementById("user-choice");
 
     if (player === "rock") {
-        userImg.innerHTML = `<img src="assets/images/rock.png"/>`;
+        userImg.innerHTML = `<img src="assets/images/rock.png">`;
         return;
     } else if (player === "paper") {
-        userImg.innerHTML = `<img src="assets/images/paper.png"/>`;
+        userImg.innerHTML = `<img src="assets/images/paper.png">`;
         return;
     } else if (player === "scissors") {
-        userImg.innerHTML = `<img src="assets/images/scissors.png"/>`;
+        userImg.innerHTML = `<img src="assets/images/scissors.png">`;
         return;
     } else if (player === "lizard") {
-        userImg.innerHTML = `<img src="assets/images/lizard.png"/>`;
+        userImg.innerHTML = `<img src="assets/images/lizard.png">`;
         return;
     } else {
-        userImg.innerHTML = `<img src="assets/images/spock.png"/>`;
+        userImg.innerHTML = `<img src="assets/images/spock.png">`;
         return;
     }
 
@@ -218,19 +216,28 @@ function botImgChange(computer) {
     let botImg = document.getElementById("bot-choice");
 
     if (computer === "rock") {
-        botImg.innerHTML = `<img src="assets/images/rock.png"/>`;
+        botImg.innerHTML = `<img src="assets/images/rock.png">`;
         return;
     } else if (computer === "paper") {
-        botImg.innerHTML = `<img src="assets/images/paper.png"/>`;
+        botImg.innerHTML = `<img src="assets/images/paper.png">`;
         return;
     } else if (computer === "scissors") {
-        botImg.innerHTML = `<img src="assets/images/scissors.png"/>`;
+        botImg.innerHTML = `<img src="assets/images/scissors.png">`;
         return;
     } else if (computer === "lizard") {
-        botImg.innerHTML = `<img src="assets/images/lizard.png"/>`;
+        botImg.innerHTML = `<img src="assets/images/lizard.png">`;
         return;
     } else {
-        botImg.innerHTML = `<img src="assets/images/spock.png"/>`;
+        botImg.innerHTML = `<img src="assets/images/spock.png">`;
         return;
     }
 }
+
+/**
+ * Function to reload the page and reset all buttons for a new game
+ */
+let reset = document.getElementById("reset-btn");
+reset.addEventListener("click", function() {
+    location.reload();
+});
+
