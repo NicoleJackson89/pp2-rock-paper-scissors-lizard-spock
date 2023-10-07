@@ -137,6 +137,12 @@ The web page game was designed to be played on almost any device and fits well w
 
 ### Future Features
 
+Possible future features could be:
+
+- Additional expansion options to the game like adding the original Rock, Paper, Scissors etc
+- Adding the option for a user to choose how many rounds are to be played before a win is announced
+- Users being able to login before starting the game and creating a save option to track high scores over time.
+
 ## Testing
 
 - The HTML, CSS & JavaScript code was tested using the W3C validator to fix any errors or warnings as well as JSHint.
