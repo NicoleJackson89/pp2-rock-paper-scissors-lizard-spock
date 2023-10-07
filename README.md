@@ -47,13 +47,24 @@ The game consists of one main page where the game is made available to play once
 
 ### Surface
 
+#### Wireframe
+
+The [wireframe](assets/docs/wireframe.png) created using paint consists of the following:
+
+- The Rules and Reset buttons placed at the top of the pages for users to access these easily
+- Game instructions so the user knows the first to score 5 wins the round
+- Contols area for the user to interact with for the game round to begin
+- The user and bot choice area where the user can visually see the choices made
+- A section stating who the winner of the round is example: "You chose spock, the bot chose paper - Paper disproves Spock, you lose!" gets printed to the screen. This was an addidion to the origional plan for the layout as I though it would be a better user experience having this
+- The rules section with an added diagram for visual understanding of the winning combinations, a close button to redirect to the game page
+
+#### Color Palette
 
 
-### Color Palette
 
-### Color Contrast
+#### Color Contrast
 
-### Fonts
+#### Fonts
 
 ## Features
 
