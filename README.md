@@ -22,6 +22,21 @@ Rock, Paper, Scissors, Lizard, Spock was made as a web based game for users who 
 - Score is shown for progress of the game for the User and the Bot.
 - There is a section showing the Bot and User choices of the game that has just been played.
 
+### Scope
+
+Content features are as follows:
+
+- Rules section for all users where needed
+- Reset option to restart the game and all controls, results and scores
+- Game controls area where the user can easily interact with choices available
+- Choices area showing the users chosen move as well as the choice of the bot for each round
+- Results section below this returning the choices made and the round winner
+- Score section for both the user and bot scores.
+
+### Structure
+
+
+
 ### Wireframe
 
 ### Color Palette
