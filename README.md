@@ -85,6 +85,9 @@ The images for the user buttons and choices on this page where edited from the o
 
 The web page games was designed to be palyed on almost any device and fits well without the need to scroll while in the process of playing a game.
 
+![Game Page](./assets/docs/game-page.png)
+![Rules Page](./assets/docs/rules.png)
+
 - Logo
   - The Logo was styled in the center of any page for an easy flow to the page on any screen size.
 
@@ -119,7 +122,18 @@ The web page games was designed to be palyed on almost any device and fits well 
 - Results area
   - After the user and bot move has been made, this area returns the results of the choices made per round as well as updates who the winner of that move is, tie game and the winner of the 5 rounds played also updates here.
 
-![Choice](./assets/docs/results.png)
+![Results](./assets/docs/results.png)
+
+- Score area
+  - The user and bot scores increment here till they reach 5 which then resets the score to 0 on both unles the Reset button is clicked sooner.
+
+![Score](./assets/docs/score.png)
+
+- Rules
+  - The rules section has been styled inside of an overlay so that the buttons in the background to not interfere while this section is active
+  - A close button was added to easily redirect to the gmme page with identical styling as the game page buttons (Rules & Reset).
+
+![Rules](./assets/docs/rules-only.png)
 
 ### Future Features
 
