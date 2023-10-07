@@ -181,7 +181,7 @@ I used the Lighthouse Google Chrome dev tools feature to test the website in mob
 
 - Mobile
 
-  - A lower performance score was received on the mobile testing.
+  - A lower performance score was received on the mobile testing due to image sizes.
 
 ![Lighthouse Mobile](./assets/docs/lighthouse-mobile.png)
 
@@ -240,6 +240,43 @@ Forking a GitHub repository will allow you to make a copy of the repository, cha
 4. Then click 'Create a new fork' you will now have a copy to work on.
 
 ## Technologies Used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+  - HTML was used to structure the content of the web page
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+  - CSS was used to style the content of the web page
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+  - JavaScript was used for the interactivity & functionality of the web page
+- [Google Fonts](https://fonts.google.com/)
+  - Google Fonts was used to style the font throughout the web page
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+  - DevTools was used throughout the process of creating the web page to find bugs and test responsiveness on elements etc.
+- [Favicon.io](https://favicon.io/)
+  - Favicon was used to generate the icon for the web page 
+- [TinyPNG](https://tinypng.com/)
+  - TinyPNG was used to resize the images on the page & buttons for faster loading time
+- [Codeanywhere](https://codeanywhere.com/)
+  - Codeanywhere was used as the development environment for this web page
+- [GitHub](https://github.com/)
+  - GitHud is being used to store the code for this web page
+- [Color Contrast Accessibility Validator](https://color.a11y.com/)
+  - Color Contrast Validator was used to test the web pages color contrast
+- [W3C Markup Validation](https://validator.w3.org/)
+  - W3C validator was used to validate all the HTML code in the web page
+- [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+  - W3C validator was used to validate all the CSS code in the web page
+- [Free Formatter](https://www.freeformatter.com/)
+  - Free formatter was used to format the CSS and HTML code throughout the web page
+- [Am I Responsive?](https://ui.dev/amiresponsive)
+  - Used to for the image in the README file
+- [Coolors](https://coolors.co/)
+  - Coolors was used to generate the colors for the webpage as well as create RGB codes
+- [Online PNG Tools](https://onlinepngtools.com/crop-png)
+  - Used to crop the winning combinations image into 5 seperate images for the user option buttons
+- [Image Color Picker](https://imagecolorpicker.com/en)
+  - Used to get the main color from one of the buttons to use throughout the page
+- [Short URL](https://www.shorturl.at/)
+  - Used to shorten web links used to reference in my code
 
 ## Credits
 

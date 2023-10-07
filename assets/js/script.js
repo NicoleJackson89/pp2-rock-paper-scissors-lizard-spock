@@ -2,7 +2,7 @@
 // Get the HTML button elements and adds event listeners to each of them
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
-    console.log(buttons);
+
     for (let button of buttons) {
         button.addEventListener("click", function () {
             let player = this.getAttribute("data-type");
