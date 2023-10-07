@@ -66,6 +66,13 @@ I used the Lighthouse Google Chrome dev tools feature to test the website in mob
 
 ### Manual Testing
 
+|What was tested|Result|
+|---|---|
+|Rules button: Opens ontop of the page content when clicked|Passed|
+|Close button in rules: Closes when clicked|Passed|
+|Reset button: Reloads the page and all buttons|Passed|
+|User/bot - selection & scores: When a user/bot takes his/her turn that the images show in teh choice placeholder and scores increment correctly|Passed|
+
 ### Known bugs and fixes
 
 ## Deployment
