@@ -38,7 +38,6 @@ Content features are as follows:
 The game consists of one main page where the game is made available to play once the page has been loaded.
 
 - The game page consists of a user friendly, easy to follow and uncomplicated layout:
-
   - Rules button
   - Reset button
   - Controls are
@@ -99,7 +98,17 @@ The web page games was designed to be palyed on almost any device and fits well 
 
 ![Nav](./assets/docs/nav.png)
 
-- 
+- Introduction
+  - Users see that by clicking on a button / making a move that the game will start
+  - They will also see that there will be a win after they or the bot reaches a score of 5.
+
+![Intro](./assets/docs/intro.png)
+
+- User Controls
+  - Users make a move by interacting with one of five buttons consisting of images of the optons they can choose
+  - The buttons were styled with a 360 degree spin on hover for playfulness and visual effect.
+
+![Controls](./assets/docs/controls.png)
 
 ### Future Features
 
