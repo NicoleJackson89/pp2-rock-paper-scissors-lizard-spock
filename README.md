@@ -75,6 +75,12 @@ I used the Lighthouse Google Chrome dev tools feature to test the website in mob
 
 ### Known bugs and fixes
 
+|What was tested / Expected results|Actual Results|What was done to fix the bug|
+|---|---|---|
+|Rules button - The rules popup section was meant to display|The popup becane visible but "Undefined" was also returned in the results section when clicked due to the main game function and loop|The buttons wehe replaced with div's to correct this|
+|"Rules, Close & Reset" buttons - Mouse pointer when hovered over|Text insertion I beam curser|The pointer curser was specified in CSS to fix this|
+|Game rules popup active - The game in the background would be inactive / not clickable|User selection / controls were still active and clickable|An overlay was placed around the rules section, visibility was changed to display in CSS for styling|
+
 ## Deployment
 
 ### [GitHub](https://github.com/) deployment
