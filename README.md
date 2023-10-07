@@ -10,6 +10,18 @@ This web based strategy game, Rock Paper Scissors Lizard Spock, was made to targ
 
 ## User Experience
 
+### Strategy
+
+Rock, Paper, Scissors, Lizard, Spock was made as a web based game for users who are familiar with The Big Bang Theory series where this expansion version of Rock, Paper, Scissors was aired in a few episodes.
+
+- Target users are of any age, who may not have much time available, enjoy short periods of easy accessible and responsive web based games from any device.
+- A second player is not needed as this game has a Bot as the opponent.
+- A Rules page has been added for new users or users needing a refresher on game rules.
+- The game ends once a score of 5 is reached by the User/Bot.
+- A Reset button is been provided If the user would like to restart the game at any point.
+- Score is shown for progress of the game for the User and the Bot.
+- There is a section showing the Bot and User choices of the game that has just been played.
+
 ### Wireframe
 
 ### Color Palette
