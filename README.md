@@ -49,7 +49,7 @@ The game consists of one main page where the game is made available to play once
 
 #### Wireframe
 
-The [wireframe](assets/docs/wireframe.png) created using paint consists of the following:
+The [wireframe](/assets/docs/wireframe.png) created using paint consists of the following:
 
 - The Rules and Reset buttons placed at the top of the pages for users to access these easily
 - Game instructions so the user knows the first to score 5 wins the round
@@ -60,7 +60,9 @@ The [wireframe](assets/docs/wireframe.png) created using paint consists of the f
 
 #### Color Palette
 
+The color palette used for the web page was minimalistic as the buttons the user would interact with are colourful, the look and feel I wanted for the web based game was playful but easy on the eye. I achieved this buy making use of mostly Hex colors throughout with a simple white background.
 
+![Color palette](./assets/docs/colors.png)
 
 #### Color Contrast
 
