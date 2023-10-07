@@ -51,7 +51,7 @@ h2,
     cursor: pointer;
 }
 
-#btn:hover, #reset-btn:hover {
+#btn:hover  , #reset-btn:hover {
     background-color: #e580ff;
     font-weight: bold;
     transform: scale(1.1);
