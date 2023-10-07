@@ -66,7 +66,13 @@ The color palette used for the web page was minimalistic as the buttons the user
 
 #### Color Contrast
 
+After running the website through a color contrast validator, the chosen colors work well together.
+
+![Color contrast](./assets/docs/color-contrast.png)
+
 #### Fonts
+
+I made use of one font, 'Mali' and 'sans-serif'. 'Mali' was used throughout the game web page as I felt it is a playful but readable font.
 
 ## Features
 
