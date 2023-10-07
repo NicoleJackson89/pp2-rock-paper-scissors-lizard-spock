@@ -165,6 +165,7 @@ The web page games was designed to be palyed on almost any device and fits well 
 ![JSHint](./assets/docs/javascript-validator-before.png)
 
 #### Testing - After fixes
+
 - 1 Warning was found in my event listener due to the loop, I made a concise decision to leave this as is as this runs the main function for the game.
 
 ![JSHint](./assets/docs/javascript-validator-after.png)
@@ -252,7 +253,7 @@ Forking a GitHub repository will allow you to make a copy of the repository, cha
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
   - DevTools was used throughout the process of creating the web page to find bugs and test responsiveness on elements etc.
 - [Favicon.io](https://favicon.io/)
-  - Favicon was used to generate the icon for the web page 
+  - Favicon was used to generate the icon for the web page
 - [TinyPNG](https://tinypng.com/)
   - TinyPNG was used to resize the images on the page & buttons for faster loading time
 - [Codeanywhere](https://codeanywhere.com/)
@@ -280,4 +281,26 @@ Forking a GitHub repository will allow you to make a copy of the repository, cha
 
 ## Credits
 
+- Game, rules and some text content used from here:
+  - [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock)
+- Images & Favicon was found / downloaded from:
+  - [The Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock)
+  - [Clip Art Max](https://www.clipartmax.com/)
+- For guidance and direction with JavaScript and some aspects of the web page bulding process:
+  - [Love Maths Project](https://github.com/NicoleJackson89/love-maths)
+  - [JavaScript Tutorial - innerHTML](https://www.javascripttutorial.net/javascript-dom/javascript-innerhtml/)
+  - [W3 Schools - HTML Favicon](https://www.w3schools.com/html/html_favicon.asp)
+- This code was used for the 360 degree rotate on the user buttons and amended to my preference and needs:
+  - [Stack Overflow - Spin or rotate an image on hover](https://stackoverflow.com/questions/23695090/spin-or-rotate-an-image-on-hover)
+- Modal box and overlay was created with guidance from these sites:
+  - [W3 Schools - CSS/JS Modal](https://www.w3schools.com/howto/howto_css_modals.asp)
+  - [W3 Schools - Overlay](https://www.w3schools.com/howto/howto_css_overlay.asp)
+  - [Free Code Camp](https://www.freecodecamp.org/news/css-display-none-and-visibility-hidden-the-difference/#:~:text=display%3Anone%20turns%20off%20the,elements%20without%20changing%20their%20layouts)
+- Reset button code and guidance was taken here:
+  - [Stack Overflow - Button that refreshes the page on click](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click)
+- Slack community for guidance:
+  - [Slack Community](https://app.slack.com/client/T0L30B202/C027C3PLS1W)
+
 ## Acknowledgements
+
+Thank you to my mentor Mitko Bachvarov for his guidance, advice and support as well as my husband and fellow student Iain Jackson for his advice, motivation and troubleshooting assistance throughout the process of this project.
