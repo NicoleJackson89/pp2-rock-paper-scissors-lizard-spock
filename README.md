@@ -43,7 +43,15 @@ This web based strategy game, Rock Paper Scissors Lizard Spock, was made to targ
 
 ### JavaScript Validator
 
+#### Testing - Before fixes
+
 - No errors were found when validating my JavaScript code through [JSHint](https://jshint.com/).
+- 59 Warnings were found, sonme of these were fixed with adding the correct version to the test before plaving the JavaScript code.
+- Other fixes were relating to the userImgChange & botImgChange functions. The return statement was moved to beloww#each "else if" condition.
+
+![JSHint](./assets/docs/javascript-validator-before.png)
+
+#### Testing - After fixes
 - 1 Warning was found in my event listener due to the loop, I made a concise decision to leave this as is as this runs the main function for the game.
 
 ![JSHint](./assets/docs/javascript-validator-after.png)
