@@ -76,11 +76,30 @@ I made use of Google fonts one main font was used, 'Mali' and 'sans-serif' as a 
 
 A favicon was added to the page in the form of a "Spock" hand symbol as this is the Lizard, Spock expansion version of the original game.
 
+#### Images
+
+The images for the user buttons and choices on this page where edited from the origonal diagram for winning combinations to beep with the theme and color scheme. I felt these were appropriate to use together to copmplete the look of the page.
+
 ## Features
 
-
-
 ### Existing Features
+
+The web page games was designed to be palyed on almost any device and fits well without the need to scroll while in the process of playing a game.
+
+- Logo
+  - The Logo was styled in the center of any page for an easy flow to the page on any screen size.
+
+![Logo](./assets/docs/logo.png)
+
+- Navigation
+  - Users can easily navigate to these pages using any device
+  - Rules button: Opens opton of the game page
+  - Reset button: Reloads the game page, score and all buttons
+  - The buttons have been styled with a darker opacity and zoom effect on hover.
+
+![Nav](./assets/docs/nav.png)
+
+- 
 
 ### Future Features
 
