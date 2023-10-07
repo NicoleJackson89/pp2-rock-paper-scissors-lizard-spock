@@ -35,9 +35,19 @@ Content features are as follows:
 
 ### Structure
 
+The game consists of one main page where the game is made available to play once the page has been loaded.
+
+- The game page consists of a user friendly, easy to follow and uncomplicated layout:
+
+  - Rules button
+  - Reset button
+  - Controls are
+  - Choice / results area
+  - Score area
+
+### Surface
 
 
-### Wireframe
 
 ### Color Palette
 
