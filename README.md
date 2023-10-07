@@ -110,6 +110,17 @@ The web page games was designed to be palyed on almost any device and fits well 
 
 ![Controls](./assets/docs/controls.png)
 
+- Choice area
+  - Users make a move by interacting with one of five buttons in the controls area, the chosen image will then replace the placeholder images.
+  - The bot choice will also be displayed after the user has made his/her move.
+
+![Choice](./assets/docs/choice.png)
+
+- Results area
+  - After the user and bot move has been made, this area returns the results of the choices made per round as well as updates who the winner of that move is, tie game and the winner of the 5 rounds played also updates here.
+
+![Choice](./assets/docs/results.png)
+
 ### Future Features
 
 ## Testing
