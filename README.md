@@ -82,7 +82,7 @@ As this code is stored in GitHub, I deployed this webpage as follows:
 6. Under 'Branch' select the first drop down menu and click 'main' and save
 7. The page will be given a URL as shown in the image below next to 'Your site is live at', this may take a few minutes to process before becoming visible.
 
-![GitHub Deployment]()
+![GitHub Deployment](./assets/docs/deployment.png)
 
 ### Cloning the GitHub repository
 
