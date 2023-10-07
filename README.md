@@ -70,11 +70,15 @@ After running the website through a color contrast validator, the chosen colors 
 
 ![Color contrast](./assets/docs/color-contrast.png)
 
-#### Fonts
+#### Fonts & Icons
 
-I made use of one font, 'Mali' and 'sans-serif'. 'Mali' was used throughout the game web page as I felt it is a playful but readable font.
+I made use of Google fonts one main font was used, 'Mali' and 'sans-serif' as a back up font. 'Mali' was used throughout the game web page as I felt it is a playful but readable font.
+
+A favicon was added to the page in the form of a "Spock" hand symbol as this is the Lizard, Spock expansion version of the original game.
 
 ## Features
+
+
 
 ### Existing Features
 
