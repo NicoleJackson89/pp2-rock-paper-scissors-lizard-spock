@@ -240,4 +240,3 @@ let reset = document.getElementById("reset-btn");
 reset.addEventListener("click", function() {
     location.reload();
 });
-

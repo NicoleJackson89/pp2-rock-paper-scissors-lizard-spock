@@ -201,7 +201,7 @@ I used the Lighthouse Google Chrome dev tools feature to test the website in mob
 |Reset button: Reloads the page and all buttons|Passed|
 |User/bot - selection & scores: When a user/bot takes his/her turn that the images show in the choice placeholder and scores increment correctly|Passed|
 
-### Known bugs and fixes
+### Bugs fixed
 
 |What was tested / Expected results|Actual Results|What was done to fix the bug|
 |---|---|---|
